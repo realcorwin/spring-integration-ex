@@ -9,5 +9,5 @@ import org.springframework.integration.annotation.MessagingGateway;
 public interface Bar {
 
     @Gateway(requestChannel = "order", replyChannel = "barkeep")
-    Drink process(Order orderItem);
+    void process(Order orderItem);
 }

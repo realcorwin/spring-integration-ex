@@ -23,8 +23,7 @@ public class SpringIntegrationExApplication {
 			Order order = generateOrder();
 			order.setId(i);
 			System.out.println("New order: " + order.toString());
-			Drink drink = bar.process(order);
-			System.out.println("Ready drink: " + drink.toString());
+			bar.process(order);
 		}
 	}
 
